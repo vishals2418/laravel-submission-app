@@ -1,42 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submission API</title>
-</head>
-<body>
-    <h1>Submission API</h1>
-    <p>Submission API is a Laravel application that provides an endpoint to submit user data asynchronously and log successful submissions.</p>
+# Submission API
 
-    <h2>Setup</h2>
-    <ol>
-        <li><strong>Clone the repository:</strong></li>
-        <pre><code>git clone &lt;repository-url&gt;</code></pre>
+Submission API is a Laravel application that provides an endpoint to submit user data asynchronously and log successful submissions.
 
-        <li><strong>Install dependencies:</strong></li>
-        <pre><code>cd submission-api
-composer install</code></pre>
+## Setup
 
-        <li><strong>Set up the environment file:</strong></li>
-        <p>Duplicate the <code>.env.example</code> file and rename it to <code>.env</code>. Update the database and other configuration settings as needed.</p>
+1. **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    ```
 
-        <li><strong>Generate application key:</strong></li>
-        <pre><code>php artisan key:generate</code></pre>
+2. **Install dependencies:**
+    ```bash
+    cd submission-api
+    composer install
+    ```
 
-        <li><strong>Run migrations:</strong></li>
-        <pre><code>php artisan migrate</code></pre>
+3. **Set up the environment file:**
+   Duplicate the `.env.example` file and rename it to `.env`. Update the database and other configuration settings as needed.
 
-        <li><strong>Start the server:</strong></li>
-        <pre><code>php artisan serve</code></pre>
-        <p>The application will be available at <a href="http://localhost:8000">http://localhost:8000</a>.</p>
-    </ol>
+4. **Generate application key:**
+    ```bash
+    php artisan key:generate
+    ```
 
-    <h2>Testing</h2>
-    <p>To run the unit test for the submission API, execute the following command:</p>
-    <pre><code>php artisan test</code></pre>
+5. **Run migrations:**
+    ```bash
+    php artisan migrate
+    ```
 
-    <p>This will run all tests located in the <code>tests</code> directory, including the <code>SubmissionTest</code>. If you want to run only the <code>SubmissionTest</code>, you can specify the path to the test file:</p>
-    <pre><code>php artisan test tests/Feature/SubmissionTest.php</code></pre>
-</body>
-</html>
+6. **Start the server:**
+    ```bash
+    php artisan serve
+    ```
+    The application will be available at [http://localhost:8000](http://localhost:8000).
+
+## Testing
+
+To run the unit test for the submission API, execute the following command:
+```bash
+php artisan test tests/Feature/SubmissionTest.php
